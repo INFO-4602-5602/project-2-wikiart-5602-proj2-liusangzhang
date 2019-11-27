@@ -17,9 +17,8 @@ with open("WikiArtClean_new.csv", mode="w") as csvwrite:
             print(styles)
         for style in styles:
             fw.writerow([style]+row[1:])
-
-
-
+            
+# The Categories for the 8 entries with more two Styles were manually splitted.
 
 
 
