@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>WikiArt Analysis</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+<!--     <header class ="container">
+      <div class ="row">
+        <div class = "col-sm-1"></div>
+        <h1 class = "col-sm-5" style="font-size:24px;" >WikiArt Analysis</h1>
+        <nav class = "col-sm-6 text-right">
+          <a href = "index.html">Home</a>
+          <a href = "design.html">Design</a>
+          <a href = "about.html">About Us</a>
+        </nav>
+      </div>
+    </header>
+    <section class = "jumbotron">
+        <div class ="container">
+          <div class= "row">
+            <h2>Morden Art</h2>
+          </div>
+        </div>
+    </section> -->
+
+
+    <header id="header" class="header" style="  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('images/m.jpg') center center no-repeat;background-size: cover;">
+      <div class ="row">
+        <div class = "col-sm-1"></div>
+        <h1 class = "col-sm-5" style="font-size:24px;" >WikiArt Analysis</h1>
+        <nav class = "col-sm-6 text-right">
+          <a href = "index.html">Home</a>
+          <a href = "design.html">Design</a>
+          <a href = "about.html">About Us</a>
+        </nav>
+      </div>
+
+
+
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-container">
+                            <h1>Modern Art </h1>
+                         <!--    <p class="p-heading p-large">asdfghjklasdfghjklasdfghjklasdfghjklasdfghjklasdfghjklasdfghjklasdfghjklsdfghjklsdfghjklasdfghjklasdfghjklasdfghjkasdfghjkasdfghjkl</p> -->
+                        </div>
+                    </div> 
+                </div> 
+            </div>
+        </div> 
+    </header> 
+
+    <section id = "m-year" class = "container">
+      <div class = "row">
+        <div class = "col-sm-5 explain">
+          <li>Modern art includes artistic work produced during the period extending roughly from the 1860s to the 1970s, and denotes the styles and philosophy of the art produced during that era.</li>
+          <li>The visualization shows that the high peak of work for Modern Art is from Year 1910 to Year 1920 and from Year 1950 to Year 1970. It accords with the fact that these are two periods which modern art grows fast.</li>
+        </div>
+        <div class = "col-sm-7">
+          <img class ="portrait" src = "images/m-y.png">
+        </div>
+    </section>
+
+
+    <section id = "m-emotion" class = "container">
+      <div class = "row">
+        <div class = "col-sm-7">
+          <img class ="portrait" src = "images/m-e.png">
+        </div>
+        <div class = "col-sm-5 explain">
+          <li>This bubble chart shows the emotion average annotation of  Modern Art. In this visualization, colors of green represent positive emotions; colors of orange represent negative emotions and colors of blue represent other emotions--mixed or neutral. The color inside each emotion type is from dark to light according to the average annotations.</li>
+          <li>From this chart, it is clear that annotators provided the most consistent labels for positive emotions including surprise, anticipation and happiness. Surprise and anticipation belong to other or mixed emotions. So other or mixed emotions are the main emotion of the modern art. </li>
+          <li>At the same time, positive emotions still have an important position. Happiness, optimism and humility have relatively high average scores.</li>
+        </div>
+    </section>
+
+    <section id = "m-rate" class = "container">
+      <div class = "row">
+        <div class = "col-sm-7 explain">
+          <li>This bar chart shows How did the annotators like the piece of Moderb Art on average (-3 (strongly dislike) to 3 (strongly like)).</li>
+          <li>TThe colors of green mean like, gray means neither like nor dislike and the colors of oranges mean dislike. The colors change from dark to light according to how much the annotators like the piece of art work.</li>
+          <li>This chart shows that the majority of annotators chose “ Like it somewhat’ or “ Neither like nor Dislike it”. Considering that many annotators tended to choose “like” because of showing respect to artists’ work, it looks like the work of Modern Art is not very attracted to people.</li>
+        </div>
+        <div class = "col-sm-5">
+          <img class ="portrait" src = "images/m-r.png">
+        </div>
+    </section>
+    <div id="gotop">
+      <div class="arrow"></div>
+      <div class="stick"></div>
+    </div>
+
+
+
+    <footer class = "container" >
+        <div class = "row" >
+          <p>&copy; 2019 INFO 5602 Group 5</p>
+        </div>
+    </footer>
+
+    <script src="http://cdn.staticfile.org/jquery/1.11.1-rc2/jquery.min.js"></script>
+    <script>
+      $(function(){
+
+          $(window).scroll(function(){  
+
+              var scrollt = document.documentElement.scrollTop + document.body.scrollTop; 
+
+              if( scrollt >800 ){  
+
+                  $("#gotop").fadeIn(400); 
+
+              }else{
+
+                  $("#gotop").stop().fadeOut(400); 
+
+              }
+
+          });
+
+          $("#gotop").click(function(){ 
+
+              $("html,body").animate({scrollTop:"0px"},200);
+
+          }); 
+
+      });
+    </script>
+
+  </body>
+</html>

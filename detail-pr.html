@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>WikiArt Analysis</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+<!--     <header class ="container">
+      <div class ="row">
+        <div class = "col-sm-1"></div>
+        <h1 class = "col-sm-5" style="font-size:24px;" >WikiArt Analysis</h1>
+        <nav class = "col-sm-6 text-right">
+          <a href = "index.html">Home</a>
+          <a href = "design.html">Design</a>
+          <a href = "about.html">About Us</a>
+        </nav>
+      </div>
+    </header>
+    <section class = "jumbotron">
+        <div class ="container">
+          <div class= "row">
+            <h2>Morden Art</h2>
+          </div>
+        </div>
+    </section> -->
+
+
+    <header id="header" class="header" style="  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('images/pr.jpeg') center center no-repeat;background-size: cover;">
+      <div class ="row">
+        <div class = "col-sm-1"></div>
+        <h1 class = "col-sm-5" style="font-size:24px;" >WikiArt Analysis</h1>
+        <nav class = "col-sm-6 text-right">
+          <a href = "index.html">Home</a>
+          <a href = "design.html">Design</a>
+          <a href = "about.html">About Us</a>
+        </nav>
+      </div>
+
+
+
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-container">
+                            <h1>Post Renaissance Art</h1>
+                         <!--    <p class="p-heading p-large">asdfghjklasdfghjklasdfghjklasdfghjklasdfghjklasdfghjklasdfghjklasdfghjklsdfghjklsdfghjklasdfghjklasdfghjklasdfghjkasdfghjkasdfghjkl</p> -->
+                        </div>
+                    </div> 
+                </div> 
+            </div>
+        </div> 
+    </header> 
+
+    <section id = "pr-year" class = "container">
+      <div class = "row">
+        <div class = "col-sm-5 explain">
+          <li>The Post Renaissance Art is from about Year 1600 to Year 1850. It includes Baroque Art, Rococo Art, Neoclassical Art and Romanticism Movement. It is an important time period of the western art history.</li>
+          <li>From this visualization, we can see two peak periods of Post Renaissance Art: First is around Year 1630; the second one is from about Year 1760 to Year Year 1870. </li>
+        </div>
+        <div class = "col-sm-7">
+          <img class ="portrait" src = "images/pr-y.png">
+        </div>
+    </section>
+
+
+    <section id = "pr-emotion" class = "container">
+      <div class = "row">
+        <div class = "col-sm-7">
+          <img class ="portrait" src = "images/pr-e.png">
+        </div>
+        <div class = "col-sm-5 explain">
+          <li>This bubble chart shows the emotion average annotation of  Post Renaissance Art. The bubbles of green colors represent positive emotions; the bubbles of orange colors represent negative emotions; the bubbles of blue colors represent other emotions--mixed or neutral. The color inside each emotion type is from dark to light according to the average annotations.</li>
+          <li>From this bubble chart, we can see that the main type of emotions that annotators feel is the positive emotions. Happiness, Trust and humility has the average annotations of 0.372, 0.227 and 0.194, which is much higher than any other emotions.</li>
+        </div>
+    </section>
+
+    <section id = "pr-rate" class = "container">
+      <div class = "row">
+        <div class = "col-sm-7 explain">
+          <li>This bar chart shows How did the annotators like the piece of Post Renaissance Art  on average (-3 (strongly dislike) to 3 (strongly like)).</li>
+          <li>We use colors of green to represent ‘like’. We also use color of gray to represent  ‘neither like nor dislike’ and the colors of oranges to represent ‘dislike’. The colors change from dark to light according to how much the annotators like the piece of art work.</li>
+          <li>From this visualization, it is clear that pieces of Post Renaissance are popular among the annotators. 464 annotators chose ‘like it’, which is more than the total amount of all the other choices. Besides, there are 286 annotators chose  ‘like it somewhat’. So most annotators like the work of Post Renaissance Art.</li>
+        </div>
+        <div class = "col-sm-5">
+          <img class ="portrait" src = "images/pr-r.png">
+        </div>
+    </section>
+
+    <div id="gotop">
+      <div class="arrow"></div>
+      <div class="stick"></div>
+    </div>
+
+
+
+    <footer class = "container" >
+        <div class = "row" >
+          <p>&copy; 2019 INFO 5602 Group 5</p>
+        </div>
+    </footer>
+
+    <script src="http://cdn.staticfile.org/jquery/1.11.1-rc2/jquery.min.js"></script>
+    <script>
+      $(function(){
+
+          $(window).scroll(function(){  
+
+              var scrollt = document.documentElement.scrollTop + document.body.scrollTop; 
+
+              if( scrollt >800 ){  
+
+                  $("#gotop").fadeIn(400); 
+
+              }else{
+
+                  $("#gotop").stop().fadeOut(400); 
+
+              }
+
+          });
+
+          $("#gotop").click(function(){ 
+
+              $("html,body").animate({scrollTop:"0px"},200);
+
+          }); 
+
+      });
+    </script>
+
+  </body>
+</html>

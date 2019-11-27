@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>WikiArt Analysis</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+<!--     <header class ="container">
+      <div class ="row">
+        <div class = "col-sm-1"></div>
+        <h1 class = "col-sm-5" style="font-size:24px;" >WikiArt Analysis</h1>
+        <nav class = "col-sm-6 text-right">
+          <a href = "index.html">Home</a>
+          <a href = "design.html">Design</a>
+          <a href = "about.html">About Us</a>
+        </nav>
+      </div>
+    </header>
+    <section class = "jumbotron">
+        <div class ="container">
+          <div class= "row">
+            <h2>Morden Art</h2>
+          </div>
+        </div>
+    </section> -->
+
+
+    <header id="header" class="header" style="  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('images/c.jpeg') center center no-repeat;background-size: cover;">
+      <div class ="row">
+        <div class = "col-sm-1"></div>
+        <h1 class = "col-sm-5" style="font-size:24px;" >WikiArt Analysis</h1>
+        <nav class = "col-sm-6 text-right">
+          <a href = "index.html">Home</a>
+          <a href = "design.html">Design</a>
+          <a href = "about.html">About Us</a>
+        </nav>
+      </div>
+
+
+
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-container">
+                            <h1>Contemporary Art</h1>
+                         <!--    <p class="p-heading p-large">asdfghjklasdfghjklasdfghjklasdfghjklasdfghjklasdfghjklasdfghjklasdfghjklsdfghjklsdfghjklasdfghjklasdfghjklasdfghjkasdfghjkasdfghjkl</p> -->
+                        </div>
+                    </div> 
+                </div> 
+            </div>
+        </div> 
+    </header> 
+
+    <section id = "c-year" class = "container">
+      <div class = "row">
+        <div class = "col-sm-5 explain">
+          <li>Contemporary art is the art of today, produced in the second half of the 20th century or in the 21st century. The work of Contemporary Art is a dynamic combination of materials, methods, concepts, and subjects that continue the challenging of boundaries that was already well underway in the 20th century.</li>
+          <li>The pieces of Contemporary Art chosen in this dataset are among twenty years: 1950 ~ 1970. The high peak of it is Year 1959 to Year 1979, which is also the high peak for the actual development of Contemporary Art.</li>
+        </div>
+        <div class = "col-sm-7">
+          <img class ="portrait" src = "images/c-y.png">
+        </div>
+    </section>
+
+
+    <section id = "c-emotion" class = "container">
+      <div class = "row">
+        <div class = "col-sm-7">
+          <img class ="portrait" src = "images/c-e.png">
+        </div>
+        <div class = "col-sm-5 explain">
+          <li>This bubble chart shows the emotion average annotation of  Contemporary Art. Different colors of bubbles mean different emotion types. Green bubbles represent positive emotions; orange bubbles represent negative emotions and blue bubbles represent other emotions--mixed or neutral. The color inside each emotion type is from dark to light according to the average annotations.</li>
+          <li>This bubble chart shows that the anticipation gets the most consistent label. </li>
+          <li>The positive emotions and negative emotions have the similar level of annotation scores. In the work of Contemporary Art, there are both positive and negative work.</li>
+        </div>
+    </section>
+
+    <section id = "c-rate" class = "container">
+      <div class = "row">
+        <div class = "col-sm-7 explain">
+          <li>This bar chart shows How did the annotators like the piece of Contemporary Art  on average (-3 (strongly dislike) to 3 (strongly like)).</li>
+          <li>The colors of green mean like, gray means neither like nor dislike and the colors of oranges mean dislike. The colors change from dark to light according to how much the annotators like the piece of art work.</li>
+          <li>In this bar chart, we can see that most of the annotators chose ‘neither like nor dislike it”, which is 106 and more than the total amount of all the other choices. 55 annotators chose ‘dislike it somewhat’, which is much more than the number of people that chose “like it’ and ‘ like it somewhat’. </li>
+          <li>We can come to the conclusion that people don’t like the style of Contemporary Art.</li>
+        </div>
+        <div class = "col-sm-5">
+          <img class ="portrait" src = "images/c-r.png">
+        </div>
+    </section>
+    <div id="gotop">
+      <div class="arrow"></div>
+      <div class="stick"></div>
+    </div>
+
+
+
+    <footer class = "container" >
+        <div class = "row" >
+          <p>&copy; 2019 INFO 5602 Group 5</p>
+        </div>
+    </footer>
+
+    <script src="http://cdn.staticfile.org/jquery/1.11.1-rc2/jquery.min.js"></script>
+    <script>
+      $(function(){
+
+          $(window).scroll(function(){  
+
+              var scrollt = document.documentElement.scrollTop + document.body.scrollTop; 
+
+              if( scrollt >800 ){  
+
+                  $("#gotop").fadeIn(400); 
+
+              }else{
+
+                  $("#gotop").stop().fadeOut(400); 
+
+              }
+
+          });
+
+          $("#gotop").click(function(){ 
+
+              $("html,body").animate({scrollTop:"0px"},200);
+
+          }); 
+
+      });
+    </script>
+
+  </body>
+</html>
