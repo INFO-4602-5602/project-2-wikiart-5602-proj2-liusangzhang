@@ -1,0 +1,41 @@
+Style,Category,Mean Rating
+Renaissance Art,Northern Renaissance,1.23
+Renaissance Art,Early Renaissance,1.27
+Renaissance Art,High Renaissance,1.5
+Post Renaissance Art,Baroque,1.43
+Post Renaissance Art,Rococo,1.57
+Post Renaissance Art,Neoclassicism,1.57
+Post Renaissance Art,Romanticism,1.51
+Post Renaissance Art,"Neoclassicism,Romanticism",1.56
+Post Renaissance Art,Realism,1.56
+Modern Art,Impressionism,1.71
+Modern Art,Abstract Expressionism,0.18
+Modern Art,Post-Impressionism,1.44
+Modern Art,Abstract Art,0.29
+Modern Art,Expressionism,0.96
+Modern Art,"Impressionism,Post-Impressionism",1.7
+Modern Art,Cubism,0.78
+Modern Art,"Cubism,Expressionism",0.81
+Modern Art,Magic Realism,1.24
+Modern Art,"Expressionism,Post-Impressionism",1.45
+Modern Art,"Abstract Art,Post-Impressionism",0.6
+Modern Art,"Cubism,Post-Impressionism",0.5
+Modern Art,"Abstract Art,Cubism",0.69
+Modern Art,Surrealism,0.46
+Modern Art,"Abstract Art,Surrealism",0.68
+Modern Art,"Magic Realism,Surrealism",1.4
+Modern Art,"Abstract Expressionism,Surrealism",0.27
+Modern Art,"Abstract Art,Abstract Expressionism",0.63
+Modern Art,Art Informel,0.03
+Modern Art,Color Field Painting,0.11
+Modern Art,Pop Art,0.5
+Modern Art,Lyrical Abstraction,0.41
+Modern Art,Neo-Expressionism,0.43
+Contemporary Art,Minimalism,-0.12
+Modern Art,"Abstract Expressionism,Lyrical Abstraction",0.4
+Modern Art,"Abstract Art,Color Field Painting",0.0
+Modern Art,"Abstract Expressionism,Color Field Painting",-0.02
+Modern Art,"Color Field Painting,Lyrical Abstraction",0.47
+Modern Art,"Art Informel,Magic Realism",0.43
+Modern Art,"Neo-Expressionism,Pop Art",1.18
+Modern Art,"Magic Realism,Neo-Expressionism",0.9

@@ -1,0 +1,21 @@
+Type,Emotion,Mean Score
+Other or Mixed,Agreeableness,0.0314
+Negative,Anger,0.0347
+Other or Mixed,Anticipation,0.1953
+Negative,Arrogance,0.0474
+Other or Mixed,Disagreeableness,0.0365
+Negative,Disgust,0.0784
+Negative,Fear,0.1093
+Positive,Gratitude,0.0524
+Positive,Happiness,0.2572
+Positive,Humility,0.1462
+Positive,Love,0.0868
+Positive,Optimism,0.1382
+Negative,Pessimism,0.0512
+Negative,Regret,0.0307
+Negative,Sadness,0.1059
+Negative,Shame,0.0267
+Other or Mixed,Shyness,0.0216
+Other or Mixed,Surprise,0.2206
+Positive,Trust,0.1873
+Other or Mixed,Neutral,0.0123
