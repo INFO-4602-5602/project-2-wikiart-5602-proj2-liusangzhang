@@ -100,6 +100,15 @@ section .row img {
   border-left: #D7D6D6  5px solid;*/
 }
 
+.portrait_main {
+  width:  60%;
+  height: 60%;
+/*  border-top: #D7D6D6  5px solid;
+  border-right: #D7D6D6  5px solid;
+  border-bottom: #D7D6D6  5px solid;
+  border-left: #D7D6D6  5px solid;*/
+}
+
 .explain{
   position: relative;
 }
