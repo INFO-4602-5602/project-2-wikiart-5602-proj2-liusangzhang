@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>WikiArt Analysis</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+<!--     <header class ="container">
+      <div class ="row">
+        <h1 class = "col-sm-6">WikiArt Analysis</h1>
+          <nav class = "col-sm-6 text-right">
+            <a href = "experience.html">Styles</a>
+            <a href = "education.html">Design</a>
+            <a href = "about.html">About Us</a>
+          </nav>
+      </div>
+
+      <section class = "jumbotron" style="height: 800px;">
+        <div class ="container">
+          <div class= "row">
+            <h2>Emotion in Art</h2>
+          </div>
+        </div>
+       </section>
+    </header> -->
+<!--     <section class = "jumbotron" style="height: 800px;">
+        <div class ="container">
+          <div class= "row">
+            <h2>Emotion in Art</h2>
+          </div>
+        </div>
+    </section> -->
+
+
+    <header id="header" class="header">
+      <div class ="row">
+        <div class = "col-sm-1"></div>
+        <h1 class = "col-sm-5" style="font-size:24px;" >WikiArt Analysis</h1>
+        <nav class = "col-sm-6 text-right">
+          <a href = "index.html">Home</a>
+          <a href = "about.html">About Us</a>
+        </nav>
+      </div>
+
+
+
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-container">
+                            <h1>Design</h1>
+                            <p class="p-heading p-large">How to collect the data? How do we do the design work?</p>
+                        </div>
+                    </div> 
+                </div> 
+            </div>
+        </div> 
+    </header> 
+
+
+    <section id = "datacollection" class = "container">
+      <h2>Data Collection</h2>
+      <div class = "row">
+        <div class = "col-sm-9">
+          <img class ="portrait" src = "images/style_category_count@2x.png">
+        </div>
+        <div class = "col-sm-3 explain">
+          <div class ="font-weight-bold">
+          </div>
+        </div>
+    </section>
+
+
+     <section id = "design-roadmap" class = "container">
+      <h2>Design Roadmap</h2>
+      <div class = "row">
+        <div class = "col-sm-9">
+          <img class ="portrait" src = "images/style_category_count@2x.png">
+        </div>
+        <div class = "col-sm-3 explain">
+          <div class ="font-weight-bold">
+          </div>
+        </div>
+    </section>
+ 
+
+  <div id="gotop">
+    <div class="arrow"></div>
+    <div class="stick"></div>
+  </div>
+
+
+
+
+    <footer class = "container" >
+        <div class = "row" >
+          <p>&copy; 2019 INFO 5602 Group 5</p>
+        </div>
+    </footer>
+
+
+
+
+    <script src="http://cdn.staticfile.org/jquery/1.11.1-rc2/jquery.min.js"></script>
+    <script>
+      $(function(){
+
+          $(window).scroll(function(){  
+
+              var scrollt = document.documentElement.scrollTop + document.body.scrollTop; 
+
+              if( scrollt >800 ){  
+
+                  $("#gotop").fadeIn(400); 
+
+              }else{
+
+                  $("#gotop").stop().fadeOut(400); 
+
+              }
+
+          });
+
+          $("#gotop").click(function(){ 
+
+              $("html,body").animate({scrollTop:"0px"},200);
+
+          }); 
+
+      });
+
+      const MyIcon = (props) => (
+        <span style={{
+          display: 'inline-flex',
+          alignItems: 'center',
+        }}>
+          {'\u200b'/* ZWSP(zero-width space) */}
+          <svg {...props} />
+        </span>
+      )
+    </script>
+  </body>
+</html>
