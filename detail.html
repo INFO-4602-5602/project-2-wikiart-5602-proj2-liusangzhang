@@ -91,13 +91,47 @@
           <img class ="portrait" src = "images/r-r.png">
         </div>
     </section>
-    
+    <div id="gotop">
+      <div class="arrow"></div>
+      <div class="stick"></div>
+    </div>
+
+
+
     <footer class = "container" >
         <div class = "row" >
           <p>&copy; 2019 INFO 5602 Group 5</p>
         </div>
     </footer>
 
+    <script src="http://cdn.staticfile.org/jquery/1.11.1-rc2/jquery.min.js"></script>
+    <script>
+      $(function(){
+
+          $(window).scroll(function(){  
+
+              var scrollt = document.documentElement.scrollTop + document.body.scrollTop; 
+
+              if( scrollt >800 ){  
+
+                  $("#gotop").fadeIn(400); 
+
+              }else{
+
+                  $("#gotop").stop().fadeOut(400); 
+
+              }
+
+          });
+
+          $("#gotop").click(function(){ 
+
+              $("html,body").animate({scrollTop:"0px"},200);
+
+          }); 
+
+      });
+    </script>
 
   </body>
 </html>

@@ -88,13 +88,13 @@
 
      <section id = "category-count" class = "container">
       <div class = "row">
-        <div class = "col-sm-4 explain">
+        <div class = "col-sm-5 explain">
           <div class ="font-weight-bold">
             <h3>Styles & Categories</h3>
             <p>Each art style has different numbers of categories, and the number of annotated arts is generally the same for each category. As a result, we see the most annotated art pieces for <span style="color:#ba55d3;">Modern Art</span>, which has the largest number of categories, followed by <span style="color:#778899;">Post Renaissance Art</span>, <span style="color:#aa7942;">Renaissance Art</span>, and lastly <span style="color:#ff0000;">Contemporary Art</span>.</p>
           </div>
         </div>
-        <div class = "col-sm-8">
+        <div class = "col-sm-7">
           <img class ="portrait" src = "images/style_category_count@2x.png">
         </div>
     </section>
@@ -193,12 +193,14 @@
        </div>
 
        </div>
-
-   </div>
-</section>
-
+    </div>
+  </section>
 
 
+  <div id="gotop">
+    <div class="arrow"></div>
+    <div class="stick"></div>
+  </div>
 
 
 
@@ -212,8 +214,33 @@
 
 
 
-    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
-    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-<!--     <script src="js/function.js"></script>     -->
+    <script src="http://cdn.staticfile.org/jquery/1.11.1-rc2/jquery.min.js"></script>
+    <script>
+      $(function(){
+
+          $(window).scroll(function(){  
+
+              var scrollt = document.documentElement.scrollTop + document.body.scrollTop; 
+
+              if( scrollt >800 ){  
+
+                  $("#gotop").fadeIn(400); 
+
+              }else{
+
+                  $("#gotop").stop().fadeOut(400); 
+
+              }
+
+          });
+
+          $("#gotop").click(function(){ 
+
+              $("html,body").animate({scrollTop:"0px"},200);
+
+          }); 
+
+      });
+    </script>
   </body>
 </html>
