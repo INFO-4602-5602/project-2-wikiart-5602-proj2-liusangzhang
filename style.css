@@ -112,19 +112,27 @@ section .row img {
 
 
 .explain{
-  position: relative;
+  /*position: relative;*/
+  padding: 10% 0;
 }
 .font-weight-bold{
-    position: absolute;
+/*    position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-
+    transform: translateY(-50%);*/
+padding: 20% 0;
 
 }
 
 
 .imgcard{
+  cursor: pointer;
+  transition: all 0.5s;
 
+}
+
+
+.imgcard:hover{
+  transform: scale(1.2);
 }
 
 .arrow{
