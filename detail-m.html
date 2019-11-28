@@ -37,11 +37,11 @@
 
     <section id = "m-year" class = "container">
       <div class = "row">
-        <div class = "col-sm-5 explain">
+        <div class = "col-sm-4 explain">
           <li>Modern art includes artistic work produced during the period extending roughly from the 1860s to the 1970s, and denotes the styles and philosophy of the art produced during that era.</li>
           <li>The visualization shows that the high peak of work for Modern Art is from Year 1910 to Year 1920 and from Year 1950 to Year 1970. It accords with the fact that these are two periods which modern art grows fast.</li>
         </div>
-        <div class = "col-sm-7">
+        <div class = "col-sm-8">
           <img class ="portrait" src = "images/m-y.png">
         </div>
     </section>
@@ -49,10 +49,10 @@
 
     <section id = "m-emotion" class = "container">
       <div class = "row">
-        <div class = "col-sm-7">
+        <div class = "col-sm-8">
           <img class ="portrait" src = "images/m-e.png">
         </div>
-        <div class = "col-sm-5 explain">
+        <div class = "col-sm-4 explain">
           <li>This bubble chart shows the emotion average annotation of  Modern Art. In this visualization, colors of green represent positive emotions; colors of orange represent negative emotions and colors of blue represent other emotions--mixed or neutral. The color inside each emotion type is from dark to light according to the average annotations.</li>
           <li>From this chart, it is clear that annotators provided the most consistent labels for positive emotions including surprise, anticipation and happiness. Surprise and anticipation belong to other or mixed emotions. So other or mixed emotions are the main emotion of the modern art. </li>
           <li>At the same time, positive emotions still have an important position. Happiness, optimism and humility have relatively high average scores.</li>
@@ -61,15 +61,54 @@
 
     <section id = "m-rate" class = "container">
       <div class = "row">
-        <div class = "col-sm-7 explain">
+        <div class = "col-sm-6 explain">
           <li>This bar chart shows How did the annotators like the piece of Moderb Art on average (-3 (strongly dislike) to 3 (strongly like)).</li>
           <li>TThe colors of green mean like, gray means neither like nor dislike and the colors of oranges mean dislike. The colors change from dark to light according to how much the annotators like the piece of art work.</li>
           <li>This chart shows that the majority of annotators chose “ Like it somewhat’ or “ Neither like nor Dislike it”. Considering that many annotators tended to choose “like” because of showing respect to artists’ work, it looks like the work of Modern Art is not very attracted to people.</li>
         </div>
-        <div class = "col-sm-5">
+        <div class = "col-sm-6">
           <img class ="portrait" src = "images/m-r.png">
         </div>
     </section>
+
+    <section id="category">
+      <div class="container">
+        <!-- <h3>Click on each art style to see details</h3> -->
+        <div class = "row">
+         <div class="imgcard col-sm-4" onclick="{location.href='detail.html'}">
+            <img src="images/r.png" style="width:100%">
+             <div class="container">
+                 <p>Renaissance Art</p>
+             </div>
+         </div>
+
+         <div class="imgcard col-sm-4" onclick="{location.href='detail-pr.html'}">
+            <img src="images/pr.png" style="width:100%"/>
+             <div class="container">
+                 <p>Post Renaissance Art</p>
+             </div>
+         </div>
+
+<!--         <div class="imgcard col-sm-4" onclick="{location.href='detail-m.html'}">
+            <img src="images/m.jpeg" style="width:100%">
+             <div class="container">
+                 <p>Modern Art</p>
+             </div>
+        </div> -->
+
+        <div class="imgcard col-sm-4" onclick="{location.href='detail-c.html'}">
+          <img src="images/c.png" style="width:100%"/>
+           <div class="container">
+               <p>Contemporary Art</p>
+           </div>
+       </div>
+
+       </div>
+      </div>
+    </section>
+
+
+
     <div id="gotop">
       <div class="arrow"></div>
       <div class="stick"></div>
